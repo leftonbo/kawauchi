@@ -26,3 +26,8 @@ indent_size = 2
 [*.css, *.scss]
 indent_style = space
 indent_size = 2
+
+[*.md]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
