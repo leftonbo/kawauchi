@@ -1,0 +1,16 @@
+---
+---
+$baseurl: "{{ site.baseurl }}";
+
+.title-background {
+  background-image: url('#{$baseurl}/assets/img/title/background_title.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  min-height: 107vw;
+}
+
+.logo-fit {
+  width: auto;
+  height: 80vh;
+  max-height: 50vw;
+}
