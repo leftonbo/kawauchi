@@ -42,6 +42,7 @@ github_username:  leftonbo
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - .vscode/
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
