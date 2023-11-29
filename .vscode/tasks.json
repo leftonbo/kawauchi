@@ -20,11 +20,16 @@
     },
     {
       "label": "end serve",
-      "type": "process",
-      "command": [
-        "${command:workbench.action.tasks.terminate}",
-        "${command:workbench.action.acceptSelectedQuickOpenItem}"
-      ],
+      "type": "shell",
+      "command": "echo ${input:terminate}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "jekyll-serve"
     }
   ]
 }
