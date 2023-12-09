@@ -18,12 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: かわいい子たちとお家を建てるゲーム
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  島で出会ったかわいい生き物たちと資源を集めながら、誰よりも早く立派なお家を立てるボードゲームの公式サイト！
 baseurl: /kawauchi              # the subpath of your site, e.g. /blog
 url: https://leftonbo.github.io # the base hostname & protocol for your site, e.g. http://example.com
 domain: leftonbo.github.io      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
@@ -31,9 +29,9 @@ twitter_username: leftonbo
 github_username:  leftonbo
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -43,14 +41,21 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .vscode/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+sass:
+  style: compressed 
+
+excerpt_separator: "<!--more-->"
