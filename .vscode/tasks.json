@@ -2,6 +2,11 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "bundle-install",
+      "command": "bundle install",
+      "type": "shell",
+    },
+    {
       "label": "jekyll-serve",
       "command": "bundle exec jekyll serve",
       "type": "shell",
@@ -19,7 +24,7 @@
       }
     },
     {
-      "label": "end serve",
+      "label": "end-serve",
       "type": "shell",
       "command": "echo ${input:terminate}"
     }
