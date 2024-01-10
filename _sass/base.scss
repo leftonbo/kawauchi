@@ -3,6 +3,22 @@
   src: url("/kawauchi/assets/font/kawauchi.woff2");
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .nav-item {
   font-family: "kawauchi", selif !important;
+}
+
+h1:first-child {
+  margin-top: 1rem
+}
+
+h1:not(:first-child) {
+  margin-top: 4rem
+}
+
+h2:not(:first-child) {
+  margin-top: 3rem
+}
+
+h3 {
+  margin-top: 2rem
 }
