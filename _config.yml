@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: かわいい子たちとお家を建てるゲーム
+title: かわいい子たちとおうちを建てるゲーム
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   島で出会ったかわいい生き物たちと資源を集めながら、誰よりも早く立派なお家を立てるボードゲームの公式サイト！
