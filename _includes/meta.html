@@ -3,14 +3,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+{% if page.summary %}
+<meta name="description" content="{{ page.summary }}">
+{% else %}
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+{% endif %}
 
 <!-- remove this after publish -->
 <meta name="robots" content="noindex,nofollow,noarchive">
 
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 {% if page.summary %}
 <meta property="og:description" content="{{ page.summary }}">
 {% else %}
@@ -20,10 +27,11 @@
 <meta name="twitter:card"  content="summary_large_image">
 <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
 {% else %}
-<meta name="twitter:card"  content="summary">
+<meta name="twitter:card"  content="summary_large_image">
 <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.title_image }}">
 {% endif %}
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icon/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" href="{{ '/assets/icon/favicon.ico' | relative_url }}" type="image/x-icon" />
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icon/favicon-32x32.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icon/favicon-16x16.png' | relative_url }}">
 <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
