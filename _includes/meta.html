@@ -7,10 +7,6 @@
 {% else %}
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 {% endif %}
-
-<!-- remove this after publish -->
-<meta name="robots" content="noindex,nofollow,noarchive">
-
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 <meta property="og:site_name" content="{{ site.title }}">
