@@ -4,13 +4,14 @@ $baseurl: "{{ site.baseurl }}";
 
 .title-background {
   background-image: url('#{$baseurl}/assets/img/title/background_title.png');
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
-  min-height: 107vw;
+  background-position: center;
+  aspect-ratio: 4 / 3;
 }
 
 .logo-fit {
-  width: auto;
-  height: 80vh;
-  max-height: 50vw;
+  padding: 20px;
+  width: 50%;
+  height: auto;
 }
