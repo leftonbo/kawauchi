@@ -1,10 +1,7 @@
-@font-face {
-  font-family: "kawauchi";
-  src: url("/kawauchi/assets/font/kawauchi.woff2");
-}
-
 h1, h2, h3, h4, h5, .nav-item {
-  font-family: "kawauchi", selif !important;
+  font-family: "Stick", serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1:first-child {
